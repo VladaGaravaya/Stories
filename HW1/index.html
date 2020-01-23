@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Пример веб-страницы</title>
+  <link href="styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+ <body>
+     <div id="back">
+        <div id="content">
+            <h1> Create new store </h1>
+            <form action=" " method="post"  autocomplete="on">
+                <p> <span class="required">*</span>Name:</p> <input type="text" id="name-form-create-store"  required="required" placeholder=" Enter name"  /> 
+        
+                <p> <span class="required">*</span>E-mail:</p> <input type="email" id="e-mail" placeholder=" Enter e-mail" required="required"  /> 
+        
+                <p> <span class="required">*</span>Phone Number: </p> <input type="number" id="phone-number" placeholder=" Enter phone number" required="required"  /> 
+                
+                <p> <span class="required">*</span>Address: </p> <input type="address" id="address" placeholder=" Enter address" required="required"  />
+
+                <p> <span class="required">*</span>Established Date: </p> <input type="date" id="date" required="required"  /> 
+
+                <p> <span class="required">*</span>Floor Area: </p> <input type="number" id="floor-area" placeholder=" Enter floor area" required="required"  /> 
+            </form>  
+            <div class="footer-form">
+                <a href='#' id="cancel">Cancel</a>
+                <a href="#" id="create-store-in-form">Create</a>
+            </div>                        
+        </div>
+     </div>
+     <div id="grey-background">
+            <div id="form-for-creation-product">
+                <h1> Create new product </h1>
+                <form action=" " method="post"  autocomplete="on">
+                    <p> <span class="required">*</span>Name:</p> <input type="text" id="product-name" required="required" placeholder=" Enter name"  /> 
+            
+                    <p> <span class="required">*</span>Price:<br> <input type="number" id="price" placeholder=" Enter price" required="required"  /> USD</p>
+            
+                    <p> <span class="required">*</span>Specs: </p> <input type="text" id="specs" placeholder=" Enter product specs" required="required"  /> 
+                    
+                    <p> <span class="required">*</span>Rating: </p> <input type="number" id="rating" placeholder=" Enter rating 1..5" required="required"  />
+    
+                    <p> <span class="required">*</span>Supplier info: </p> <input type="text" id="supp-info" placeholder="Enter supplier info" required="required"  /> 
+    
+                    <p> <span class="required">*</span>Made in: </p> <input type="text" id="country" placeholder=" Enter origin country" required="required"  />
+
+                    <p> <span class="required">*</span>Production company name: </p> <input type="text" id="company" placeholder=" Enter manufacturer name" required="required"/>
+                    
+                    <p> <span class="required">*</span>Status: </p> 
+                    <select name="select" id="status"> 
+                        <option value="OK" selected>OK</option> 
+                        <option value="STORAGE">STORAGE</option>
+                        <option value="OUT_OF_STOCK">OUT OF STOCK</option>
+                    </select>
+                </form>  
+                <div class="footer-form">
+                    <a href='#' id="cancel-2">Cancel</a>
+                    <a href="#" id="create-product-in-form">Create</a>
+                </div>                        
+            </div>
+         </div>
+    
+    <div class="flex-container">
+        <div class="container-stores-list">
+
+            <div class="heading">Stores list</div>
+            <div class="search">
+                <form>
+                    <input type="text" id="search" placeholder="Search.." name="search">
+                    <i class="fa fa-search" id="to-search"></i><i class="fa fa-refresh" id="to-refresh" aria-hidden="true"></i>
+                </form>
+            </div>
+           
+            <ul id="list">
+               
+            </ul>
+            <div class="footer-stores-list">
+                <a href="#" id="create-store"> + Create</a>
+            </div>
+            
+        </div>
+        <div id="store-details-container">
+            <div id="start-page">
+                <i class="fa fa-shopping-basket fa-5x" aria-hidden="true"></i>
+                <br>
+                The store is not selected.
+                <p>Please select the store to proceed.</p>
+            </div>
+        </div>
+    </div>  
+    
+        
+    
+    <script src="script.js"></script>
+ </body>
+</html>
